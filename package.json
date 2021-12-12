@@ -1,6 +1,6 @@
 {
   "name": "my_movies",
-  "version": "0.1.1-lazy-loading",
+  "version": "0.1.2-fix-pagination-with-active-count",
   "private": true,
   "dependencies": {
     "@date-io/date-fns": "^2.11.0",
