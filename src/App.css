@@ -36,3 +36,50 @@
     transform: rotate(360deg);
   }
 }
+
+
+.inputField,
+textarea.inputField,
+input.inputField,
+select.inputField {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #dee0e2;
+  padding: 0.5rem 0.5rem;
+  font-size: 0.9rem;
+  transition: all 100ms;
+  line-height: 1;
+  display: block;
+}
+
+.date-input {
+  width: 97%;
+  border: 2px solid red;
+}
+
+textarea.inputField :focus,
+input.inputField :focus,
+select.inputField :focus {
+  border: 1px solid;
+}
+
+textarea.inputError,
+input.inputError,
+select.inputError,
+.MuiInputBase-root-Error {
+  border: 1px solid red;
+  box-shadow: 0px 0px 0px 0.5px red;
+}
+
+.MuiInputBase-root-Error {
+  border-radius: 5px;
+}
+
+.MuiInputBase-root-Error:hover {
+  transform: none;
+}
+
+.messageError {
+  font-size: small;
+  color: red;
+}
