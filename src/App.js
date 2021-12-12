@@ -1,6 +1,6 @@
 import { AppBar, Grid } from '@material-ui/core';
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
 
 import {
@@ -13,6 +13,11 @@ import Mypagination from './pages/home/pagination';
 function App() {
   const dispatch = useDispatch();
 
+  const {
+    page,
+    total_pages,
+  } = useSelector(state=> state?.movie)
+
   return (
     <div className="App">
       <AppBar position='sticky' style={{
@@ -24,8 +29,8 @@ function App() {
       </AppBar>
       <main>
         <Mypagination
-          current_page={1}
-          total_pages={500}
+          current_page={page}
+          total_pages={total_pages}
           dispatch={dispatch}
         />
         <Grid
