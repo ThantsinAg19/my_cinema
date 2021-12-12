@@ -1,17 +1,21 @@
 import React from 'react';
+import PageLoader from '../../asset/img/my_cinema_loader.png';
 
 const FallBackLoader = () => (
     <div style={{
         textAlign: 'center',
     }}>
-        <p style={{
-            top: '50%'
-        }}>
-            loading...
-        </p>
-      
-    </div>
-  )
-  
 
-  export default FallBackLoader
+        <img
+            src={PageLoader}
+            alt={"loader..."}
+            style={{
+                marginTop: '10%'
+            }}
+        />
+
+    </div>
+)
+
+
+export default FallBackLoader
